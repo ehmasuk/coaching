@@ -21,10 +21,10 @@
             <section class="coatching-section">
                 <div class="row align-items-center">
                     <div class="col-md-6">
-                        <p class="coatching-title">Get coaching to live your best life. No matter where you live it.</p>
-                        <p class="coatching-des">Match with the right life coach for your needs right now. Then, you'll meet on our handy online platform for virtual sessions on a schedule you choose. Click below for our free coaching assessment to get started.</p>
-                        <button class="btn coatching-btn">TRY IT FREE</button>
-                        <p class="coatching-hint">Secure, no-obligation signup</p>
+                        <p class="coatching-title">Escribe la historia perfecta con mentorías especializadas</p>
+                        <p class="coatching-des">Uno de mis alumnos fue finalista del premio Planeta 2021. Soy especialmente efectivo para ayudarte a crear una historia que tus lectores amarán. Tengo más de 15 años de experiencia y una pericia especial para convertir historias en un gran éxito. </p>
+                        <button class="btn coatching-btn">Quiero una asesoría</button>
+                        <p class="coatching-hint">La primera sesión es gratis</p>
                     </div>
                     <div class="col-md-6">
 
@@ -35,15 +35,38 @@
                 </div>
             </section>
         </div>
+        <div class="container-fluid coatching-info-bar">
+            <div class="row align-items-center text-center justify-content-center">
+                <h5>10 CONSEJOS PARA ESCRIBIR UN GRAN INICIO</h5>
+                <button class="btn btn-lg"><span style="color: #fff;">DESCARGAR</span> GRATIS</button>
+            </div>
+        </div>
 
 
-        <div class="coatching-popup-wraper">
+        <div class="coatching-popup-wraper coatching-hero-popup">
             <div class="coatching-popup">
-                <p class="text-right"><i class="fas fa-times"></i></p>
+                <p class="text-right"><i class="fas fa-times close-1"></i></p>
                 <div class="body">
                     <p class="title">Complete this form to get instant access.</p>
                     <form>
                         <input type="text" placeholder="First Name">
+                        <input type="number" placeholder="Phone">
+                        <input type="submit" value="GET STARTED">
+                    </form>
+                    <p class="privacy-txt">Privacy Policy: We hate spam and promise to keep your email address safe</p>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="coatching-popup-wraper coatching-bar-popup">
+            <div class="coatching-popup">
+                <p class="text-right"><i class="fas fa-times close-2"></i></p>
+                <div class="body">
+                    <p class="title">Complete this form to get instant access.</p>
+                    <form>
+                        <input type="text" placeholder="First Name">
+                        <input type="Email" placeholder="Email">
                         <input type="number" placeholder="Phone">
                         <input type="submit" value="GET STARTED">
                     </form>
@@ -58,11 +81,20 @@
 
         <script>
             document.querySelector('.coatching-btn').addEventListener('click',function(){
-                document.querySelector('.coatching-popup-wraper').classList.toggle('show');
+                document.querySelector('.coatching-hero-popup').classList.toggle('show');
             });
-            document.querySelector('.fa-times').addEventListener('click',function(){
-                document.querySelector('.coatching-popup-wraper').classList.toggle('show');
+            document.querySelector('.close-1').addEventListener('click',function(){
+                document.querySelector('.coatching-hero-popup').classList.toggle('show');
             });
+
+
+            document.querySelector('.coatching-info-bar .btn').addEventListener('click',function(){
+                document.querySelector('.coatching-bar-popup').classList.toggle('show');
+            });
+            document.querySelector('.close-2').addEventListener('click',function(){
+                document.querySelector('.coatching-bar-popup').classList.toggle('show');
+            });
+            console.log(document.querySelector('.close-2'));
         </script>
 
     </body>

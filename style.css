@@ -38,26 +38,27 @@ a:hover {
 }
 
 
-
-
-
-.container{
-    max-width: 95% !important;
+@media (min-width: 1200px){
+    .container, .container-lg, .container-md, .container-sm, .container-xl {
+        max-width: 1600px;
+    }
 }
+
 .coatching-section{
     padding: 50px 0;
 }
 .coatching-section .coatching-title{
     font-weight: 600;
-    font-size: 40px;
+    font-size: 50px;
     color: rgb(25,24,71);
-    max-width: 400px;
+    max-width: 600px;
 }
 
 
 .coatching-section .coatching-des{
     margin-top: 20px;
     color: rgb(102,102,102);
+    font-size: 19px;
 }
 .coatching-section .coatching-btn{
     font-weight: 600;
@@ -65,7 +66,7 @@ a:hover {
     border-radius: 50px;
     background-color: #8C63EE;
     color: #fff;
-    font-size: 20px;
+    font-size: 25px;
     margin: 20px 0;
 }
 .coatching-section .coatching-hint{
@@ -141,7 +142,20 @@ a:hover {
     font-size: 40px;
     color: rgb(25, 24, 71);
 }
-
+.coatching-info-bar{
+    padding: 30px;
+    background-color: #F9AF1A;
+    text-align: center;
+}
+.coatching-info-bar h5{
+    margin: 0;
+}
+.coatching-info-bar .btn{
+    margin-left: 50px;
+    background-color: #014958;
+    color: #F9AF1A;
+    font-size: 20px;
+}
 .show{
     display: block !important;
 }
