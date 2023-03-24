@@ -1,0 +1,139 @@
+/* deafult */
+body {
+    font-family: "Poppins", sans-serif;
+    background-color: #F8FAFB;
+}
+.row {
+    margin: 0;
+}
+p {
+    margin-bottom: 0;
+}
+a {
+    color: inherit;
+    text-decoration: inherit;
+}
+a:hover {
+    color: inherit;
+    text-decoration: inherit;
+}
+
+*::-webkit-scrollbar {
+    width: 20px;
+}
+*::-webkit-scrollbar-track {
+    background-color: transparent;
+}
+*::-webkit-scrollbar-thumb {
+    background-color: #d6dee1;
+    border-radius: 20px;
+    border: 6px solid transparent;
+    background-clip: content-box;
+}
+*::-webkit-scrollbar-thumb:hover {
+    background-color: #794eda;
+}
+.btn {
+    box-shadow: none !important;
+}
+.coatching-section{
+    padding: 50px 0;
+}
+.coatching-section .coatching-title{
+    font-weight: 600;
+    font-size: 40px;
+    color: rgb(25,24,71);
+    max-width: 400px;
+}
+
+
+.coatching-section .coatching-des{
+    margin-top: 20px;
+    color: rgb(102,102,102);
+}
+.coatching-section .coatching-btn{
+    font-weight: 600;
+    padding: 5px 40px;
+    border-radius: 50px;
+    background-color: #8C63EE;
+    color: #fff;
+    font-size: 20px;
+    margin: 20px 0;
+}
+.coatching-section .coatching-hint{
+    color: rgb(102,102,102);
+}
+/* popup */
+.coatching-popup-wraper{
+    background-color: rgba(250,251,253,.9);
+    left: 0;
+    top: 0;
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    z-index: 99999;
+    display: none;
+}
+.coatching-popup-wraper .coatching-popup{
+    width: 700px;
+    max-width: 90%;
+    box-shadow: 0 6px 24px 0 rgb(18 43 70 / 10%);
+    border-radius: 10px;
+    background-color: #fff;
+    border: 1px solid #e0dfdb;
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%,-50%);
+}
+.coatching-popup-wraper .coatching-popup .body{
+    max-width: 560px;
+    margin: auto;
+    padding: 20px;
+    
+}
+.coatching-popup-wraper .coatching-popup .fa-times{
+    cursor: pointer;
+    font-size: 20px;
+    padding: 20px;
+}
+.coatching-popup .body form input{
+    display: block;
+    width: 100%;
+    padding: 5px 10px;
+    border: 1px solid #794eda;
+    color: #020020;
+    margin-bottom: 15px;
+    outline: none;
+    box-shadow: none;
+    font-size: 20px;
+    border-radius: 2px;
+}
+.coatching-popup .body form input::placeholder{
+    color: #000;
+}
+.coatching-popup .body form input[type="submit"]{
+    background-color: #794eda;
+    color: #fff;
+    font-weight: 600;
+    border: none;
+    border-radius: 50px;
+    min-height: 50px;
+}
+.coatching-popup .body .privacy-txt{
+    color: rgb(119, 119, 119);
+    text-align: center;
+    margin-top: 30px;
+    font-weight: 300;
+}
+.coatching-popup .body .title{
+    text-align: center;
+    margin-bottom: 30px;
+    font-weight: 600;
+    font-size: 40px;
+    color: rgb(25, 24, 71);
+}
+
+.show{
+    display: block !important;
+}
