@@ -36,6 +36,14 @@ a:hover {
 .btn {
     box-shadow: none !important;
 }
+
+
+
+
+
+.container{
+    max-width: 95% !important;
+}
 .coatching-section{
     padding: 50px 0;
 }
