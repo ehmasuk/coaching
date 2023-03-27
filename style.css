@@ -40,25 +40,31 @@ a:hover {
 
 @media (min-width: 1200px){
     .container, .container-lg, .container-md, .container-sm, .container-xl {
-        max-width: 1600px;
+        max-width: 90%;
     }
 }
 
 .coatching-section{
     padding: 50px 0;
+    min-height: 85vh;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
 }
 .coatching-section .coatching-title{
     font-weight: 600;
-    font-size: 50px;
+    font-size: 65px;
     color: rgb(25,24,71);
     max-width: 600px;
+    line-height: 1;
 }
 
 
 .coatching-section .coatching-des{
     margin-top: 20px;
     color: rgb(102,102,102);
-    font-size: 19px;
+    font-size: 20px;
 }
 .coatching-section .coatching-btn{
     font-weight: 600;
@@ -66,11 +72,12 @@ a:hover {
     border-radius: 50px;
     background-color: #8C63EE;
     color: #fff;
-    font-size: 25px;
+    font-size: 30px;
     margin: 20px 0;
 }
 .coatching-section .coatching-hint{
     color: rgb(102,102,102);
+    font-size: 20px;
 }
 /* popup */
 .coatching-popup-wraper{
@@ -154,7 +161,10 @@ a:hover {
     margin-left: 50px;
     background-color: #014958;
     color: #F9AF1A;
-    font-size: 20px;
+    font-size: 35px;
+}
+.coatching-info-bar h5{
+    margin: 0;
 }
 .show{
     display: block !important;
